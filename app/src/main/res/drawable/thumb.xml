@@ -1,0 +1,45 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true">
+        <layer-list>
+            <!-- Outer Solid Circle -->
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/white"/>
+                    <size android:height="30dp" android:width="30dp"/>
+                    <stroke android:color="#000000" android:width="2dp" />
+                </shape>
+            </item>
+
+            <item android:top="10dp" android:left="10dp" android:right="10dp" android:bottom="10dp">
+                <shape android:shape="oval">
+                    <solid android:color="#FFBD12"/>
+                    <size android:height="18dp" android:width="18dp"/>
+                    <stroke android:color="#000000" android:width="2dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+    <item android:state_checked="false">
+        <layer-list>
+            <!-- Outer Solid Circle -->
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/white"/>
+                    <size android:height="30dp" android:width="30dp"/>
+                    <stroke android:color="#000000" android:width="2dp" />
+                </shape>
+            </item>
+
+            <item android:top="10dp" android:left="10dp" android:right="10dp" android:bottom="10dp">
+                <shape android:shape="oval">
+                    <solid android:color="#8C8C8C"/>
+                    <size android:height="18dp" android:width="18dp"/>
+                    <stroke android:color="#000000" android:width="2dp" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

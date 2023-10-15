@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".S_Product_Activity">
+
+    <!--    header-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0sp"
+            android:layout_height="0sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.06" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_black"
+            android:text="Shop"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/ShopCartBtn"
+            android:layout_width="0sp"
+            android:layout_height="0sp"
+            android:padding="12sp"
+            android:src="@drawable/shopping_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toStartOf="@+id/view2"
+            app:layout_constraintHeight_percent="1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/Total_Purchase1"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_marginTop="7sp"
+            android:layout_marginEnd="-3dp"
+            android:visibility="invisible"
+            android:background="@drawable/circle_background"
+            android:fontFamily="@font/montserrat_bold"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/ShopCartBtn"
+            app:layout_constraintTop_toTopOf="@+id/ShopCartBtn" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0sp"
+            android:layout_height="0sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.07" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0sp"
+        android:layout_height="2.5sp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+
+<!--    Product text and Category-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="0sp"
+            android:layout_height="0sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="0sp"
+                android:layout_height="0sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.06" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="0sp"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:gravity="center"
+                android:text="Products"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view4"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0sp"
+            android:layout_height="0sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="0sp"
+                android:layout_height="0sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.06" />
+
+            <ScrollView
+                android:id="@+id/scrollView2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fillViewport="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view5"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/textAll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/circle_selected_color"
+                            android:drawableEnd="@drawable/baseline_close_24"
+                            android:gravity="center"
+                            android:paddingLeft="15sp"
+                            android:paddingTop="5sp"
+                            android:paddingRight="15sp"
+                            android:paddingBottom="5sp"
+                            android:text="All "
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textJacket"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:background="@drawable/circle_white_black"
+                            android:paddingLeft="15sp"
+                            android:paddingTop="5sp"
+                            android:paddingRight="15sp"
+                            android:paddingBottom="5sp"
+                            android:text="Jacket"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/textAll"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textBlazers"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:background="@drawable/circle_white_black"
+                            android:paddingLeft="15sp"
+                            android:paddingTop="5sp"
+                            android:paddingRight="15sp"
+                            android:paddingBottom="5sp"
+                            android:text="Blazers"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/textJacket"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textTees"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:background="@drawable/circle_white_black"
+                            android:paddingLeft="15sp"
+                            android:paddingTop="5sp"
+                            android:paddingRight="15sp"
+                            android:paddingBottom="5sp"
+                            android:text="Tees"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/textBlazers"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </HorizontalScrollView>
+            </ScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--    display all the item in recyclerview-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout6"
+        android:layout_width="0sp"
+        android:layout_height="0sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Show_Shop_Recyclerview"
+            android:layout_width="0sp"
+            android:layout_height="0sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/item_product" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+<!--    Show this message once you buy something-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ShowNotif_Btn"
+        android:layout_width="0sp"
+        android:layout_height="100sp"
+        android:layout_margin="10sp"
+        android:visibility="gone"
+        app:cardCornerRadius="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/Notif_BackgroundColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/purple_200"
+            android:foreground="@drawable/picture_border">
+
+            <View
+                android:id="@+id/view18"
+                android:layout_width="0sp"
+                android:layout_height="0sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.06" />
+
+            <TextView
+                android:id="@+id/Notif_PurchaseDetails"
+                android:layout_width="0sp"
+                android:layout_height="0sp"
+                android:fontFamily="@font/montserrat_medium"
+                android:gravity="start|center_vertical"
+                android:text="Fur-neck Jacket has been added to your cart"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/view18"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.8" />
+
+            <ImageView
+                android:id="@+id/Close_Notif_btn"
+                android:layout_width="0sp"
+                android:layout_height="0sp"
+                android:layout_margin="8sp"
+                android:background="@drawable/circle_white_black"
+                android:padding="5sp"
+                android:src="@drawable/baseline_close_24"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.08" />
+
+
+            <View
+                android:layout_width="0sp"
+                android:layout_height="4sp"
+                android:background="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
