@@ -46,3 +46,6 @@ Instruction :
   Click "Run" (the green triangle) in Android Studio.
   Select your connected device or emulator.
   Wait for the app to build and launch.
+
+
+(if there's still an project error occur i recommend changing the android project name to Shopping_cart thank you!)
