@@ -11,9 +11,10 @@ Instruction :
 *Fork the Repository:
 
   Click on the "Fork" button at the top right of this page to create a copy of the repository in your GitHub account.
-  Clone the Repository:
 
-*Open Android Studio.
+*Clone the Repository:
+  
+  Open Android Studio.
   Click on "Get from Version Control."
   Paste the repository URL: https://github.com/SasoriWasHere/Fernando_AndroidDevTest.git.
   Click "Clone" to download the project to your computer.
