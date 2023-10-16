@@ -15,7 +15,7 @@ Instruction :
 
 *Open Android Studio.
   Click on "Get from Version Control."
-  Paste the repository URL: https://github.com/YourUsername/Fernando_AndroidDevTest.git.
+  Paste the repository URL: https://github.com/SasoriWasHere/Fernando_AndroidDevTest.git.
   Click "Clone" to download the project to your computer.
   
 *Open the Project in Android Studio:  
